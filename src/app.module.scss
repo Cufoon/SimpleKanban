@@ -1,0 +1,36 @@
+.wrapper {
+  border-radius: 12px;
+  // background-color: #2a3c5a;
+  border: 2px dashed rgb(198, 198, 198);
+  display: flex;
+  gap: 20px;
+  padding: 36px 30px;
+}
+
+.list {
+  min-width: 200px;
+  padding: 8px 8px 16px 8px;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.75) 0px 0px 2px 6px;
+}
+
+.list-title {
+  padding: 8px 12px 12px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  padding: 12px;
+  border-radius: 9px;
+}
