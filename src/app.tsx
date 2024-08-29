@@ -1,22 +1,38 @@
 import styles from './app.module.scss';
 
 const done = [
-  'Signal && Variable',
-  'Control Flow && Operator',
-  'Template && Function',
-  'Nested Flow and Component',
-  'Some Code Refactor',
-  'Component dot Access',
-  'Random Relation',
-  'Inequivalent Mutation',
-  '(new)Integration',
-  '(new)Some Code Improvement'
+  'Phase1 Work',
+  'Phase2 Common Work',
+  'Expression Value Calculation',
+  '(new)BigInt Operators Realization in Finite Fields',
+  '(new)Expression Value in BigInt Finite Fields'
 ];
-const doing = ['Code Generate Probability Improvement','Equivalent Mutation', 'Coverage && Regeneration'];
-const todo = ['Phase2 Work'];
+
+const doing = [
+  <div>
+    <p style={{ margin: '0' }}>Input Generation by Z3</p>
+    <em style={{ fontStyle: 'italic', color: 'grey' }}>
+      will be done in next week
+    </em>
+  </div>,
+  <div>
+    <p style={{ margin: '0' }}>Code Generate Probability Improvement</p>
+    <em style={{ fontStyle: 'italic', color: 'grey' }}>
+      will be done in next two weeks
+    </em>
+  </div>,
+  <div>
+    <p style={{ margin: '0' }}>Code Difference Tracking</p>
+    <em style={{ fontStyle: 'italic', color: 'grey' }}>
+      will be done in next two weeks
+    </em>
+  </div>
+];
+
+const todo = ['Next Milestone'];
 
 interface ListProps {
-  data: string[];
+  data: any[];
   color: string;
   name: string;
   titleColor: string;
@@ -44,7 +60,8 @@ const List: React.FC<ListProps> = ({ data, name, color, titleColor }) => {
                   <div
                     style={{
                       color: 'rgb(186, 243, 219)',
-                      fontStyle: 'italic'
+                      fontStyle: 'italic',
+                      paddingLeft: '5px'
                     }}
                   >
                     new
